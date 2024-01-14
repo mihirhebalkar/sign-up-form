@@ -1,3 +1,39 @@
+:root{
+    font-size: 16px;
+}
+
 body{
+    background-color:darkgray;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.image img{
+    width: 40rem;
+    height: auto;
+}
+.image img:hover{
+    opacity: 0.5;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%; 
+    background-color: red;
+    flex: 1 1 auto;
+}
+
+.info{
+    height: 35%;
+    width: 100%;
+    background-color: bisque;
+}
+
+.form{
+    height: 50%;
+    width: 100%;
     background-color: aqua;
 }
