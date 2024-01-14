@@ -16,6 +16,7 @@ body{
 }
 
 .image{
+    flex: 1 1 auto;
     position: relative;
     width: 40%;
 }
@@ -28,13 +29,14 @@ body{
     font-size: 50px;
 }
 
-.image img:hover{
-    opacity: 0.5;
+.image .logo:hover{
+    opacity: 0.2;
+
 }
 
 .image .text{
     opacity: 0.6;
-    margin-top: 15rem;
+    margin-top: 11rem;
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -42,15 +44,14 @@ body{
     font-family: 'logo-font','Times New Roman', Times, serif;
     color: white;
     width: 100%;
-    font-size: 5rem;
 }
 
 .image .text div{
-    
+    font-size: 7rem;
 }
 
 .image .text .logo{
-    height: 5rem;
+    height: 7rem;
     width: auto;
 }
 
@@ -66,9 +67,15 @@ body{
 .info{
     height: 30vh;
     width: 100%;
-    background-color: bisque;
+    background-color:mintcream;
+    font-size: 25px;
+    padding-top: 4rem;
+    padding-left: 6rem;
+    box-sizing: border-box;
 }
-
+.info p{
+    width: 70%;
+}
 .form{
     height: 50vh;
     width: 100%;
