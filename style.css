@@ -2,19 +2,56 @@
     font-size: 16px;
 }
 
+@font-face {
+    font-family: logo-font;
+    src: url(./Fonts/Norse-Bold.otf);
+}
+
 body{
     background-color:darkgray;
     display: flex;
     justify-content: center;
     margin: 0;
+    width: 100%;
 }
 
-.image img{
-    width: 40rem;
-    height: auto;
+.image{
+    position: relative;
+    width: 40%;
 }
+
+.image .bg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    height: auto;
+    font-size: 50px;
+}
+
 .image img:hover{
     opacity: 0.5;
+}
+
+.image .text{
+    opacity: 0.6;
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    background: black;
+    font-family: 'logo-font','Times New Roman', Times, serif;
+    color: white;
+    width: 100%;
+    font-size: 5rem;
+}
+
+.image .text div{
+    
+}
+
+.image .text .logo{
+    height: 5rem;
+    width: auto;
 }
 
 .content{
@@ -27,13 +64,13 @@ body{
 }
 
 .info{
-    height: 35%;
+    height: 30vh;
     width: 100%;
     background-color: bisque;
 }
 
 .form{
-    height: 50%;
+    height: 50vh;
     width: 100%;
     background-color: aqua;
 }
