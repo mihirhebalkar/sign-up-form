@@ -76,11 +76,16 @@ body{
 .info p{
     width: 70%;
 }
+
 .form{
+    font-size: 2rem;
     height: 50vh;
     width: 100%;
     background-color: aqua;
+}
 
+.form p{
+    padding: 2rem;
 }
 
 form{
@@ -89,25 +94,29 @@ form{
     gap: 5rem;
     justify-content: center;
     align-items: center;
+    padding-top: 3rem;
 }
 
-.form-1{
+.form-1,.form-2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5rem;
-    font-size: 12px;
+    font-size: 18px;
 }
 
-.form-2{
+.form-group{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5  rem;
+    flex-direction: column;
+}
+
+form label{
     font-size: 12px;
 }
 
-
+form input{
+    font-size: 20px;
+}
 
 #email:valid{
     border: 4px solid green;
@@ -115,5 +124,9 @@ form{
 
 #email:invalid{
     border: 4px solid red;
+}
+
+#phone:valid{
+    border: 4px solid green;
 }
 
